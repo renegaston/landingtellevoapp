@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeLlevoApp - Descarga la APK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .call-to-action {
+            margin: 20px 0;
+        }
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .photos img {
+            max-width: 100%;
+            height: auto;
+            flex: 1 1 calc(20% - 10px);
+        }
+        @media (max-width: 768px) {
+            .photos img {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .photos img {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a TeLlevoApp</h1>
+        <p class="call-to-action">¡Descarga nuestra app y disfruta de un servicio de transporte rápido y seguro! Haz clic en el botón de abajo para descargar la APK e instalarla en tu dispositivo Android.</p>
+        <button onclick="window.location.href='ruta/a/tu/apk/TeLlevoApp.apk'">Descargar APK</button>
+        <div class="photos">
+            <img src="ruta/a/tu/imagen1.jpg" alt="Foto 1">
+            <img src="ruta/a/tu/imagen2.jpg" alt="Foto 2">
+            <img src="ruta/a/tu/imagen3.jpg" alt="Foto 3">
+            <img src="ruta/a/tu/imagen4.jpg" alt="Foto 4">
+            <img src="ruta/a/tu/imagen5.jpg" alt="Foto 5">
+        </div>
+    </div>
+</body>
+</html>
