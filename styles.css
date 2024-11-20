@@ -127,3 +127,52 @@ button:hover {
         font-size: 1.8em;
     }
 }
+/* Footer Styles */
+.site-footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Extiende el footer al ancho completo */
+    position: relative; /* Mantiene el footer en su flujo */
+    left: 0; /* Alineado al borde izquierdo */
+}
+
+.site-footer p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.site-footer .developer-links {
+    margin-top: 10px;
+}
+
+.site-footer .developer-links a {
+    color: #ffffff;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.site-footer .developer-links a:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último enlace */
+}
+
+.site-footer .developer-links a:hover {
+    text-decoration: underline; /* Resalta los enlaces al pasar el cursor */
+}
+
+.site-footer .contact-info {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #adb5bd;
+}
+
+.site-footer .contact-info a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.site-footer .contact-info a:hover {
+    text-decoration: underline; /* Resalta el enlace al pasar el cursor */
+}
