@@ -133,9 +133,13 @@ button:hover {
     color: white;
     padding: 20px 0;
     text-align: center;
-    width: 100%; /* Extiende el footer al ancho completo */
-    position: relative; /* Mantiene el footer en su flujo */
-    left: 0; /* Alineado al borde izquierdo */
+    width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.site-footer .footer-content {
+    margin-bottom: 10px;
 }
 
 .site-footer p {
@@ -144,22 +148,21 @@ button:hover {
 }
 
 .site-footer .developer-links {
-    margin-top: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    gap: 15px; /* Espacio uniforme entre los enlaces */
 }
 
 .site-footer .developer-links a {
     color: #ffffff;
-    margin-right: 15px;
     text-decoration: none;
     font-size: 1em;
-}
-
-.site-footer .developer-links a:last-child {
-    margin-right: 0; /* Elimina el margen derecho del último enlace */
+    display: inline-block;
 }
 
 .site-footer .developer-links a:hover {
-    text-decoration: underline; /* Resalta los enlaces al pasar el cursor */
+    text-decoration: underline;
 }
 
 .site-footer .contact-info {
@@ -174,5 +177,5 @@ button:hover {
 }
 
 .site-footer .contact-info a:hover {
-    text-decoration: underline; /* Resalta el enlace al pasar el cursor */
+    text-decoration: underline;
 }
