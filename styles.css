@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Cambiado para no centrar verticalmente */
-    min-height: 100%; /* Para que el body se expanda en altura */
+    justify-content: flex-start;
+    min-height: 100%;
     text-align: center;
 }
 
@@ -25,21 +25,20 @@ p {
 }
 
 button {
-    background-color: white; /* Fondo blanco */
-    color: #007bff; /* Color del texto azul */
-    border: 2px solid #007bff; /* Borde azul */
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
     padding: 15px 30px;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 25px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el color */
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-    background-color: #007bff; /* Fondo azul al pasar el mouse */
-    color: white; /* Texto blanco al pasar el mouse */
+    background-color: #007bff;
+    color: white;
 }
-
 
 .gallery {
     margin-top: 40px;
@@ -60,8 +59,14 @@ button:hover {
 }
 
 .images img {
-    width: 100%;
+    width: 50%; /* Reduzco el tamaño de las imágenes al 50% */
     height: auto;
     border-radius: 10px;
+    border: 5px solid #007bff; /* Agrego un marco azul a las imágenes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Agrego transición para un efecto de escala */
+}
+
+.images img:hover {
+    transform: scale(1.05); /* Al pasar el ratón, la imagen crece un poco */
 }
