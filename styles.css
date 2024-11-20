@@ -1,3 +1,6 @@
+
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e9ecef;
@@ -96,7 +99,7 @@ button:hover {
 }
 
 .images img:hover {
-    transform: scale(1.05);
+    transform: scale(1.2); /* Aumenta el valor para un mayor aumento */
 }
 
 .profile-img {
@@ -127,6 +130,7 @@ button:hover {
         font-size: 1.8em;
     }
 }
+
 /* Footer Styles */
 .site-footer {
     background-color: #343a40;
