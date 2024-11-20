@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Cambiado para no centrar verticalmente */
-    min-height: 100%; /* Para que el body se expanda en altura */
+    justify-content: flex-start;
+    min-height: 100vh;
     text-align: center;
 }
 
@@ -22,29 +22,57 @@ p {
     font-size: 1.2em;
     max-width: 600px;
     margin-bottom: 30px;
+    line-height: 1.5;
 }
 
 button {
-    background-color: white; /* Fondo blanco */
-    color: #007bff; /* Color del texto azul */
-    border: 2px solid #007bff; /* Borde azul */
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
     padding: 15px 30px;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 25px; /* Bordes redondeados */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el color */
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
-    background-color: #007bff; /* Fondo azul al pasar el mouse */
-    color: white; /* Texto blanco al pasar el mouse */
+    background-color: #007bff;
+    color: white;
 }
 
+.download-button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+.download-button i {
+    font-size: 1.5em;
+}
+
+.download-button:hover {
+    background-color: #007bff;
+    color: white;
+}
 
 .gallery {
     margin-top: 40px;
     width: 100%;
-    max-width: 1200px; /* Limita el tamaño máximo de la galería */
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .gallery h2 {
@@ -55,8 +83,8 @@ button:hover {
 
 .images {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Diseño en columnas adaptativas */
-    gap: 20px; /* Espacio entre las imágenes */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
 }
 
 .images img {
@@ -64,37 +92,38 @@ button:hover {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-/* Estilos para la imagen redonda */
+.images img:hover {
+    transform: scale(1.05);
+}
+
 .profile-img {
-    width: 150px; /* Ajusta el tamaño de la imagen */
-    height: 150px; /* Asegura que la imagen sea cuadrada */
-    border-radius: 50%; /* Da forma redonda */
-    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
-    border: 5px solid #fff; /* Borde blanco para un buen contraste */
-    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
 }
 
-.download-button {
-    background-color: white;
-    color: #007bff;
-    border: 2px solid #007bff;
-    padding: 10px 20px;
-    font-size: 1.1em;
-    cursor: pointer;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+/* Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
 
-.download-button i {
-    font-size: 1.5em;
-}
+    p {
+        font-size: 1em;
+    }
 
-.download-button:hover {
-    background-color: #007bff;
-    color: white;
+    .download-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .gallery h2 {
+        font-size: 1.8em;
+    }
 }
