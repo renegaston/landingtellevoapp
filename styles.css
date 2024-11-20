@@ -75,3 +75,26 @@ button:hover {
     border: 5px solid #fff; /* Borde blanco para un buen contraste */
     margin-bottom: 20px; /* Espacio debajo de la imagen */
 }
+
+.download-button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-button i {
+    font-size: 1.5em;
+}
+
+.download-button:hover {
+    background-color: #007bff;
+    color: white;
+}
