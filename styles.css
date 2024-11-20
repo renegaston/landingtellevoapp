@@ -21,7 +21,7 @@ p {
     color: #6c757d;
     font-size: 1.2em;
     max-width: 600px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
     line-height: 1.5;
 }
 
