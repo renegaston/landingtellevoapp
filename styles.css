@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start; /* Cambiado para no centrar verticalmente */
+    min-height: 100%; /* Para que el body se expanda en altura */
     text-align: center;
 }
 
