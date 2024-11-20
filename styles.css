@@ -11,48 +11,85 @@ body {
     min-height: 100vh;
 }
 
-.gallery-container {
-    max-width: 800px;
-    padding: 10px;
+.container {
+    max-width: 1200px;
+    padding: 20px;
     background: white;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 20px;
 }
 
 h1 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 20px;
 }
 
-.gallery {
+.call-to-action {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #555;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    transition: transform 0.5s ease;
 }
 
-.gallery img {
-    width: calc(33.333% - 20px); /* Ajusta el tamaño de las imágenes */
+.carousel-inner img {
+    min-width: 100%;
     height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-    .gallery img {
-        width: calc(50% - 10px); /* Ajusta el tamaño para pantallas más pequeñas */
-    }
+.carousel-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-@media (max-width: 480px) {
-    .gallery img {
-        width: 100%; /* Ajusta el tamaño para pantallas muy pequeñas */
-    }
+.carousel-buttons button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
