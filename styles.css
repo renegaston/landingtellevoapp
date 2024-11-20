@@ -32,7 +32,7 @@ h1 {
     animation: fadeIn 2s ease-in-out;
 }
 
-button {
+.button {
     background-color: white;
     color: #007bff;
     border: 2px solid #007bff;
@@ -41,44 +41,52 @@ button {
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
-button:hover {
+.button:hover {
     background-color: #007bff;
     color: white;
 }
 
-.photos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.photos img {
-    max-width: 100%;
-    height: auto;
-    flex: 1 1 calc(20% - 10px);
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 20px auto;
     border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.photos img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
-@media (max-width: 768px) {
-    .photos img {
-        flex: 1 1 calc(50% - 10px);
-    }
+.carousel-inner img {
+    min-width: 100%;
+    height: auto;
 }
 
-@media (max-width: 480px) {
-    .photos img {
-        flex: 1 1 100%;
-    }
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.carousel-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-buttons button:hover {
+    background-color: #0056b3;
 }
 
 @keyframes fadeIn {

@@ -11,13 +11,47 @@
         <h1>Bienvenido a TeLlevoApp</h1>
         <p class="call-to-action">¡Descarga nuestra app y disfruta de un servicio de transporte rápido y seguro! Haz clic en el botón de abajo para descargar la APK e instalarla en tu dispositivo Android.</p>
         <button onclick="window.location.href='https://drive.google.com/file/d/1y4bwWrEEr2Afrl8HbqXeSYcAz9UNY-95/view?usp=sharing'">Descargar APK</button>
-        <div class="photos">
-            <img src="ruta/a/tu/imagen1.jpg" alt="Foto 1">
-            <img src="ruta/a/tu/imagen2.jpg" alt="Foto 2">
-            <img src="ruta/a/tu/imagen3.jpg" alt="Foto 3">
-            <img src="ruta/a/tu/imagen4.jpg" alt="Foto 4">
-            <img src="ruta/a/tu/imagen5.jpg" alt="Foto 5">
+        <div class="carousel"></div>
+            <div class="carousel-inner">
+                <img src="imagen1.jpg" alt="Imagen 1">
+                <img src="imagen2.jpg" alt="Imagen 2">
+                <img src="imagen3.jpg" alt="Imagen 3">
+                <img src="imagen4.jpg" alt="Imagen 4">
+                <img src="imagen5.jpg" alt="Imagen 5">
+                <img src="imagen6.jpg" alt="Imagen 6">
+                <img src="imagen7.jpg" alt="Imagen 7">
+            </div>
         </div>
+
+        <div class="carousel-buttons">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        const carouselInner = document.querySelector('.carousel-inner');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            const width = carouselInner.clientWidth;
+            carouselInner.style.transform = `translateX(-${currentIndex * width}px)`;
+        }
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : 6;
+            updateCarousel();
+        });
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex < 6) ? currentIndex + 1 : 0;
+            updateCarousel();
+        });
+
+        window.addEventListener('resize', updateCarousel);
+    </script>
     </div>
 </body>
 </html>
