@@ -81,7 +81,7 @@ button:hover {
     margin-top: 40px; /* Margen superior */
     width: 100%; /* Ancho completo */
     max-width: 1200px; /* Ancho máximo */
-    padding: 0 10px; /* Relleno */
+    padding: 0 30px; /* Relleno */
     box-sizing: border-box; /* Incluir borde y relleno en el tamaño */
 }
 
