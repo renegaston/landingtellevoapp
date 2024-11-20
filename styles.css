@@ -41,6 +41,8 @@ button:hover {
 
 .gallery {
     margin-top: 40px;
+    width: 100%;
+    max-width: 1200px; /* Limita el tamaño máximo de la galería */
 }
 
 .gallery h2 {
@@ -49,8 +51,14 @@ button:hover {
     font-size: 2em;
 }
 
-.gallery img {
-    max-width: 100%;
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Diseño en columnas adaptativas */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.images img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
