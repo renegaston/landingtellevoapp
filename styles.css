@@ -65,3 +65,13 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Estilos para la imagen redonda */
+.profile-img {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px; /* Asegura que la imagen sea cuadrada */
+    border-radius: 50%; /* Da forma redonda */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
+    border: 5px solid #fff; /* Borde blanco para un buen contraste */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
