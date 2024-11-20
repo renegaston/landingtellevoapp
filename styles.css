@@ -99,7 +99,7 @@ button:hover {
 }
 
 .images img:hover {
-    transform: scale(1.2); /* Aumenta el valor para un mayor aumento */
+    transform: scale(1.3); /* Aumenta el valor para un mayor aumento */
 }
 
 .profile-img {
