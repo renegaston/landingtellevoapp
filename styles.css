@@ -34,7 +34,7 @@ h1 {
 }
 
 .gallery img {
-    width: calc(33.333% - 20px); /* Ajusta el tamaño de las imágenes */
+    width: calc(33.333% - 10px); /* Ajusta el tamaño de las imágenes */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
