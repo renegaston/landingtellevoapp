@@ -26,8 +26,8 @@ p {
 
 button {
     background-color: white; /* Fondo blanco */
-    color: #28a745; /* Color del texto (verde) */
-    border: 2px solid #28a745; /* Borde verde */
+    color: #007bff; /* Color del texto azul */
+    border: 2px solid #007bff; /* Borde azul */
     padding: 15px 30px;
     font-size: 1em;
     cursor: pointer;
@@ -36,9 +36,10 @@ button {
 }
 
 button:hover {
-    background-color: #28a745; /* Fondo verde al pasar el mouse */
+    background-color: #007bff; /* Fondo azul al pasar el mouse */
     color: white; /* Texto blanco al pasar el mouse */
 }
+
 
 .gallery {
     margin-top: 40px;
