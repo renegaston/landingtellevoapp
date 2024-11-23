@@ -3,22 +3,46 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh; /* Asegura que use toda la altura disponible */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 10px; /* Añade espacio alrededor del contenido */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
 }
 
-/* Contenedor centrado */
+/* Encabezado */
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #0056b3;
+}
+
+/* Contenedor */
 .container {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    width: 100%;
+    width: 100%; /* Ocupa todo el ancho disponible */
     text-align: center;
+    box-sizing: border-box; /* Incluye padding y borde dentro del ancho total */
 }
 
 /* Encabezados */
@@ -45,31 +69,36 @@ ul {
     padding-left: 20px;
 }
 
-/* Estilo del enlace "Volver" */
-header {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-header a {
-    font-size: 24px;
-    text-decoration: none;
-    color: #007bff;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: color 0.3s ease;
-}
-
-header a:hover {
-    color: #0056b3;
-}
-
 /* Separador */
 hr {
     width: 100%;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 20px 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Añade espacio en dispositivos pequeños */
+        flex-direction: column; /* Cambia la dirección para contenido largo */
+    }
+
+    header a {
+        font-size: 16px; /* Tamaño más pequeño para el enlace */
+    }
+
+    .container {
+        padding: 15px; /* Menos padding en móviles */
+        max-width: 100%; /* Asegura el uso completo del ancho */
+        box-shadow: none; /* Evita sombras pesadas en móviles */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Ajusta tamaño del título */
+    }
+
+    p, ul {
+        font-size: 0.9em; /* Texto más compacto */
+    }
 }
