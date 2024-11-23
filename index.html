@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeLlevoApp</title>
-    <!-- Vincular Font Awesome para íconos -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> <!-- Vincula el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Imagen redonda -->
     <img src="/assets/avatar.png" alt="Icono de la app" class="profile-img">
-
     <h1>Bienvenido a TeLlevoApp</h1>
     <p>
         En el contexto actual, donde muchas instituciones educativas han enfrentado desafíos significativos al retornar
@@ -23,23 +20,28 @@
         vehículos de aquellos compañeros que cuentan con movilización propia.
     </p>
 
-    <p>Descarga la aplicación y sé parte de esta
-        comunidad que facilita el retorno seguro y económico a casa, disponible para <strong>Android</strong>.
-        (Próximamente en <strong>iOS</strong>).</p>
+    <p>Descarga la aplicación y sé parte de esta comunidad que facilita el retorno seguro y económico a casa, 
+        disponible para <strong>Android</strong>. (Próximamente en <strong>iOS</strong>).</p>
 
-    <!-- Botón de descarga para Android -->
-    <a href="https://drive.google.com/file/d/1y4bwWrEEr2Afrl8HbqXeSYcAz9UNY-95/view?usp=sharing" target="_blank">
-        <button class="download-button">
-            <i class="fab fa-android"></i> Descargar para Android
-        </button>
-    </a>
-    <hr>
-    <!-- Botón de descarga para Apple
-    <a href="" target="_blank">
-        <button class="download-button">
-            <i class="fab fa-apple"></i> Descargar para iOS
-        </button>
-    </a>-->
+    <!-- Contenedor para Android -->
+    <div id="androidContent" class="deviceContent">
+        <a href="https://drive.google.com/file/d/1y4bwWrEEr2Afrl8HbqXeSYcAz9UNY-95/view?usp=sharing" target="_blank">
+            <button class="download-button">
+                <i class="fab fa-android"></i> Descargar para Android
+            </button>
+        </a>
+    </div>
+
+    <!-- Contenedor para iOS -->
+    <div id="iosContent" class="deviceContent">
+        <p>La aplicación está en desarrollo para iOS, ¡próximamente disponible!</p>
+    </div>
+
+    <!-- Contenedor para Web -->
+    <div id="webContent" class="deviceContent">
+        <p>Escanea el código QR para descargar la aplicación.</p>
+        <img src="/assets/qr-code.png" alt="Código QR" class="qr-code">
+    </div>
 
     <!-- Galería de imágenes -->
     <div class="gallery">
@@ -78,6 +80,8 @@
             Contacto: <a href="mailto:contacto@tellevoapp.com">contacto@tellevoapp.com</a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

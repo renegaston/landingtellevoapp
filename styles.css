@@ -215,3 +215,61 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 
 }
+.deviceContent {
+    display: none;
+}
+
+/* Estilo para los botones de descarga */
+.download-button {
+    background-color: white;
+    color: #007bff;
+    border: 2px solid #007bff;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+/* QR */
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+/* Estilos para la galería y el resto (sin cambios) */
+.gallery {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 30px;
+}
+
+/* Pie de página y otros estilos (sin cambios) */
+
+/* Estilos responsivos (sin cambios) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .download-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .gallery h2 {
+        font-size: 1.8em;
+    }
+}
