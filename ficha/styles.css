@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica - TeLlevoApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha Técnica - TeLlevoApp</h1>
+        <div class="app-info">
+            <h2>Información de la App</h2>
+            <p><strong>Nombre:</strong> TeLlevoApp</p>
+            <p><strong>Versión:</strong> 1.0.0</p>
+            <p><strong>Desarrollador:</strong> Tu Empresa</p>
+            <p><strong>Plataforma:</strong> Android, iOS</p>
+            <p><strong>Requiere:</strong> Android 5.0 o superior, iOS 10.0 o superior</p>
+        </div>
+        <div class="features">
+            <h2>Características</h2>
+            <ul>
+                <li>Servicio de transporte rápido y seguro</li>
+                <li>Seguimiento en tiempo real</li>
+                <li>Notificaciones instantáneas</li>
+                <li>Pago seguro dentro de la app</li>
+                <li>Soporte 24/7</li>
+            </ul>
+        </div>
+        <div class="download">
+            <h2>Descargar</h2>
+            <button>Descargar APK</button>
+        </div>
+    </div>
+</body>
+</html>
